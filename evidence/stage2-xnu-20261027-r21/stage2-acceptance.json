@@ -1,0 +1,42 @@
+{
+  "stage": 2,
+  "minimal_native_acceptance_passed": true,
+  "ready_for_stage3": true,
+  "device": "Sony Xperia XZ Premium SO-04J",
+  "serial": "DEVICE_SERIAL",
+  "darwin_version": "22.5.0",
+  "xnu_version": "8796.121.2",
+  "native_successful_runs": 2,
+  "heartbeats_per_run": [
+    14,
+    14
+  ],
+  "same_boot_image_in_both_runs": true,
+  "boot_sha256": "1e1235c8675d166378bbc24529db854ac374e3fd5f1b05039b68ce7ac38dd165",
+  "image_sha256": "969e8c1c58b3f84316d25e0e256aafb70eca13ac9c7f1b33220249827c0887b3",
+  "kernel_input_sha256": "9239d4adb7a2c433d7ed5729b47b63acc5281af73d8a81640ef3c678c8afd26c",
+  "pid1_sha256": "b4d305cd37a676ff6bfd5c8c67fc0ca49d7fa678d787b02df40d2acb3d92c16e",
+  "evidence": [
+    {
+      "file": "WORKSPACE\\work\\captures\\stage2-xnu-20261027-r21\\verified-result.json",
+      "raw_pstore_sha256": "11c5e6a29a532964c0a0d68fce6b89ea89831fda3a2915af143730472e1f90af"
+    },
+    {
+      "file": "WORKSPACE\\work\\captures\\stage2-xnu-20261027-r21-repeat1\\verified-result.json",
+      "raw_pstore_sha256": "77b8071846fd92d995be94d9bcc6c65d36e7200691368add453482b85f2cd56c"
+    }
+  ],
+  "qemu_normal_and_fault_injection_passed": true,
+  "compiled_source_hashes_match": true,
+  "aliyun_services_unchanged": true,
+  "running_lab_build_or_qemu_units": [],
+  "cloud_used_for_this_native_series": false,
+  "boot_and_fota_unchanged": true,
+  "automatic_android_boot_completed_in_both_runs": true,
+  "open_regression": "R20 SIGBUS at initial user execution remains unexplained; R21 diagnostic path was not triggered in either successful native run",
+  "next": [
+    "Rebuild source kernel with no PAN, Sony IRQ19/GIC initialization and native 4 KiB policy",
+    "Pin Apple userland/kernel ABI and validate dyld/shared cache/launchd",
+    "Bring up root volume, display/SpringBoard and input"
+  ]
+}

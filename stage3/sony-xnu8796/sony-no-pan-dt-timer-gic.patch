@@ -1,0 +1,116 @@
+--- a/osfmk/arm64/gic_v3_irq.c
++++ b/osfmk/arm64/gic_v3_irq.c
+@@ -72,7 +72,7 @@
+ 
+ #define GIC_SGI_SIGNAL          0           /* cpu_signal(): another processor wants this one's attention */
+ #define GIC_SGI_STOP            1           /* psci_smp_stop_here(): the system is going back to the boot loader */
+-#define GIC_INTID_VTIMER        27          /* EL1 virtual timer PPI */
++static uint32_t gic_timer_intid; /* /arm-io/timer p8,timer-intid; OnePlus/UniXNU binding */
+ #define GIC_INTID_SPI_MIN       32
+ #define GIC_INTID_SPURIOUS_MIN  1020
+ #define GIC_SPI_MOST            48          /* attached at a time */
+@@ -310,7 +310,7 @@
+ 		}
+ 		gic_active_iar[cpu] = iar | GIC_IAR_TAKEN;
+ 
+-		if (intid == GIC_INTID_VTIMER) {
++		if (intid == gic_timer_intid) {
+ 			/* same sequence as the FIQ path in sleh_fiq() */
+ 			getCpuDatap()->cpu_decrementer = -1; /* Large */
+ 			rtclock_intr(TRUE);
+@@ -418,7 +418,7 @@
+ {
+ 	int cpu = cpu_number();
+ 	vm_offset_t gicr;
+-	uint32_t mine = 1u << GIC_INTID_VTIMER;
++	uint32_t mine;
+ 
+ 	if (gicd_base == 0) {
+ 		DTEntry entry;
+@@ -430,6 +430,19 @@
+ 		    prop_size < 4 * sizeof(uint64_t)) {
+ 			panic("gic: no usable /arm-io/gic node in the device tree");
+ 		}
++		DTEntry timer;
++		void const *timer_prop;
++		unsigned int timer_size;
++		if (SecureDTLookupEntry(NULL, "/arm-io/timer", &timer) != kSuccess ||
++		    SecureDTGetProperty(timer, "p8,timer-intid", &timer_prop, &timer_size) != kSuccess ||
++		    timer_size != sizeof(uint32_t)) {
++			panic("gic: missing DT virtual timer INTID");
++		}
++		gic_timer_intid = *(uint32_t const *)timer_prop;
++		if (gic_timer_intid < 16 || gic_timer_intid >= 32) {
++			panic("gic: virtual timer INTID must be a PPI");
++		}
++
+ 		uint64_t const *reg = prop;
+ 		vm_offset_t soc_base = pe_arm_get_soc_base_phys();
+ 
+@@ -444,9 +457,28 @@
+ 		return;
+ 	}
+ 
++	mine = 1u << gic_timer_intid;
++
+ 	/* System-register CPU interface */
+ 	__builtin_arm_wsr64("ICC_SRE_EL1", __builtin_arm_rsr64("ICC_SRE_EL1") | 1);
+ 	__builtin_arm_isb(ISB_SY);
++
++	/* Sony R19/R21: ARE must precede redistributor PPI configuration.
++	 * The nonsecure CTLR alias needs both Group1 enables (Linux sequence 0x13).
++	 * Preserve DS and the other existing distributor bits on QEMU.
++	 */
++	if (cpu == 0) {
++		uint32_t ctlr = gic_read32(gicd_base + GICD_CTLR);
++		if (!(ctlr & GICD_CTLR_ARE_NS)) {
++			gic_write32(gicd_base + GICD_CTLR, ctlr & ~3u);
++			gic_distributor_settle();
++			ctlr = gic_read32(gicd_base + GICD_CTLR) | GICD_CTLR_ARE_NS;
++			gic_write32(gicd_base + GICD_CTLR, ctlr);
++			gic_distributor_settle();
++		}
++		gic_write32(gicd_base + GICD_CTLR, ctlr | GICD_CTLR_ARE_NS | GICD_CTLR_ENABLE_G1NS | 1u);
++		gic_distributor_settle();
++	}
+ 
+ 	gicr = gicr_cpu_base[cpu] = gic_find_redistributor();
+ 
+@@ -476,17 +508,9 @@
+ 	/* Virtual timer PPI (and those): Group 1 (IRQ), default priority, enabled */
+ 	gic_write32(gicr + GICR_IGROUPR0, gic_read32(gicr + GICR_IGROUPR0) | mine);
+ 	gic_write32(gicr + GICR_IGRPMODR0, gic_read32(gicr + GICR_IGRPMODR0) & ~mine);
+-	*(volatile uint8_t *)(gicr + GICR_IPRIORITYR(GIC_INTID_VTIMER)) = GIC_PRIORITY_DEFAULT;
++	*(volatile uint8_t *)(gicr + GICR_IPRIORITYR(gic_timer_intid)) = GIC_PRIORITY_DEFAULT;
+ 	gic_write32(gicr + GICR_ISENABLER0, mine);
+ 
+-	/* Distributor: affinity routing, Group 1 enabled (normally already so) */
+-	uint32_t ctlr = gic_read32(gicd_base + GICD_CTLR);
+-	if ((ctlr & (GICD_CTLR_ENABLE_G1NS | GICD_CTLR_ARE_NS)) != (GICD_CTLR_ENABLE_G1NS | GICD_CTLR_ARE_NS)) {
+-		gic_write32(gicd_base + GICD_CTLR, ctlr | GICD_CTLR_ENABLE_G1NS | GICD_CTLR_ARE_NS);
+-		while (gic_read32(gicd_base + GICD_CTLR) & GICD_CTLR_RWP) {
+-			/* wait for the write to take effect */
+-		}
+-	}
+ 
+ 	/*
+ 	 * CPU interface: accept all priorities, no preemption grouping, Group 1 on. And no priority
+@@ -502,7 +526,7 @@
+ 
+ 	ml_install_interrupt_handler(NULL, 0, NULL, gic_irq_handler, NULL);
+ 	kprintf("gic: v3, distributor %p, cpu %d's redistributor %p, virtual timer on PPI %d\n",
+-	    (void *)gicd_base, cpu, (void *)gicr, GIC_INTID_VTIMER);
++	    (void *)gicd_base, cpu, (void *)gicr, gic_timer_intid);
+ }
+ 
+ #endif /* GENERIC_GIC_V3_IRQ */
+--- a/pexpert/pexpert/arm64/BCM2837.h
++++ b/pexpert/pexpert/arm64/BCM2837.h
+@@ -20,1 +20,1 @@
+-#define __ARM_PAN_AVAILABLE__     1
++#define __ARM_PAN_AVAILABLE__     0 /* SO-04J Kryo: measured ID_AA64MMFR1_EL1.PAN=0 */
+--- a/makedefs/MakeInc.def
++++ b/makedefs/MakeInc.def
+@@ -63,1 +63,1 @@
+-MACHINE_FLAGS_ARM64_BCM2837 = -DARM64_BOARD_CONFIG_BCM2837 -Xclang -target-feature -Xclang +pan
++MACHINE_FLAGS_ARM64_BCM2837 = -DARM64_BOARD_CONFIG_BCM2837

@@ -1,0 +1,26 @@
+[Defines]
+  INF_VERSION = 0x00010019
+  BASE_NAME = SonyDxeProbe
+  FILE_GUID = 5c3cb126-349a-428a-a1fc-8a1d82dc7b35
+  MODULE_TYPE = DXE_DRIVER
+  VERSION_STRING = 0.1
+  ENTRY_POINT = SonyDxeProbeEntry
+[Sources]
+  SonyDxeProbe.c
+[Packages]
+  MdePkg/MdePkg.dec
+  ArmPkg/ArmPkg.dec
+[LibraryClasses]
+  UefiDriverEntryPoint
+  SerialPortLib
+  DebugLib
+  TimerLib
+  ArmSmcLib
+  DxeServicesLib
+  MemoryAllocationLib
+  UefiBootServicesTableLib
+[Protocols]
+  gEfiSecurityArchProtocolGuid
+  gEfiRuntimeArchProtocolGuid
+[Depex]
+  gEfiSecurityArchProtocolGuid AND gEfiRuntimeArchProtocolGuid

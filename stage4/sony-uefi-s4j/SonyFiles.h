@@ -1,0 +1,30 @@
+#pragma once
+STATIC VOID SonyFillFiles(SONY_UFS_CONTEXT *C){
+C->FileCount=3;C->ExtentCount=22;
+C->File[0].Bytes=65536ULL;C->File[0].First=0;C->File[0].Count=1;CopyMem(C->File[0].Name,"fixture",8);
+C->File[0].ProofFnv=SONY_FIXTURE_FNV;
+C->Extent[0].Logical=0ULL;C->Extent[0].Lba=12886665ULL;C->Extent[0].Blocks=16ULL;
+C->File[1].Bytes=2608537600ULL;C->File[1].First=1;C->File[1].Count=20;CopyMem(C->File[1].Name,"system",7);
+C->Extent[1].Logical=0ULL;C->Extent[1].Lba=6351113ULL;C->Extent[1].Blocks=32768ULL;
+C->Extent[2].Logical=134217728ULL;C->Extent[2].Lba=6383881ULL;C->Extent[2].Blocks=32768ULL;
+C->Extent[3].Logical=268435456ULL;C->Extent[3].Lba=6416649ULL;C->Extent[3].Blocks=32768ULL;
+C->Extent[4].Logical=402653184ULL;C->Extent[4].Lba=6449417ULL;C->Extent[4].Blocks=32768ULL;
+C->Extent[5].Logical=536870912ULL;C->Extent[5].Lba=6482185ULL;C->Extent[5].Blocks=32768ULL;
+C->Extent[6].Logical=671088640ULL;C->Extent[6].Lba=6514953ULL;C->Extent[6].Blocks=32768ULL;
+C->Extent[7].Logical=805306368ULL;C->Extent[7].Lba=6547721ULL;C->Extent[7].Blocks=14336ULL;
+C->Extent[8].Logical=864026624ULL;C->Extent[8].Lba=6725897ULL;C->Extent[8].Blocks=32768ULL;
+C->Extent[9].Logical=998244352ULL;C->Extent[9].Lba=6758665ULL;C->Extent[9].Blocks=32768ULL;
+C->Extent[10].Logical=1132462080ULL;C->Extent[10].Lba=6791433ULL;C->Extent[10].Blocks=32768ULL;
+C->Extent[11].Logical=1266679808ULL;C->Extent[11].Lba=6824201ULL;C->Extent[11].Blocks=32768ULL;
+C->Extent[12].Logical=1400897536ULL;C->Extent[12].Lba=6856969ULL;C->Extent[12].Blocks=32768ULL;
+C->Extent[13].Logical=1535115264ULL;C->Extent[13].Lba=6889737ULL;C->Extent[13].Blocks=32768ULL;
+C->Extent[14].Logical=1669332992ULL;C->Extent[14].Lba=6922505ULL;C->Extent[14].Blocks=32768ULL;
+C->Extent[15].Logical=1803550720ULL;C->Extent[15].Lba=6955273ULL;C->Extent[15].Blocks=32768ULL;
+C->Extent[16].Logical=1937768448ULL;C->Extent[16].Lba=6988041ULL;C->Extent[16].Blocks=32768ULL;
+C->Extent[17].Logical=2071986176ULL;C->Extent[17].Lba=7020809ULL;C->Extent[17].Blocks=32768ULL;
+C->Extent[18].Logical=2206203904ULL;C->Extent[18].Lba=7053577ULL;C->Extent[18].Blocks=32768ULL;
+C->Extent[19].Logical=2340421632ULL;C->Extent[19].Lba=7264521ULL;C->Extent[19].Blocks=32768ULL;
+C->Extent[20].Logical=2474639360ULL;C->Extent[20].Lba=7297289ULL;C->Extent[20].Blocks=32690ULL;
+C->File[2].Bytes=4194304ULL;C->File[2].First=21;C->File[2].Count=1;CopyMem(C->File[2].Name,"tools",6);
+C->Extent[21].Logical=0ULL;C->Extent[21].Lba=12887305ULL;C->Extent[21].Blocks=1024ULL;
+}

@@ -1,0 +1,16 @@
+[Defines]
+  INF_VERSION = 0x00010019
+  BASE_NAME = SonyCrashResetLib
+  FILE_GUID = 36f8fb9e-793e-49b3-ab3f-fd0672c4fdf2
+  MODULE_TYPE = BASE
+  VERSION_STRING = 0.1
+  LIBRARY_CLASS = DefaultExceptionHandlerLib|DXE_CORE DXE_DRIVER
+[Sources]
+  SonyCrashLib.c
+[Packages]
+  MdePkg/MdePkg.dec
+  ArmPkg/ArmPkg.dec
+[LibraryClasses]
+  PrintLib
+  SerialPortLib
+  ArmSmcLib

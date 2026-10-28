@@ -1,0 +1,84 @@
+[FD.MSM8998Pkg_UEFI]
+BaseAddress = 0xa0000000|gArmTokenSpaceGuid.PcdFdBaseAddress
+Size = 0x00200000|gArmTokenSpaceGuid.PcdFdSize
+ErasePolarity = 1
+BlockSize = 0x1000
+NumBlocks = 0x200
+
+0x0|0x8000
+DATA = {
+  0x01,0x00,0x00,0x10, 0xff,0x1f,0x00,0x14,
+  0x00,0x00,0x08,0x00,0x00,0x00,0x00,0x00,
+  0x00,0x00,0x20,0x00,0x00,0x00,0x00,0x00,
+  0x0a,0x00,0x00,0x00,0x00,0x00,0x00,0x00,
+  0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,
+  0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,
+  0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,
+  0x41,0x52,0x4d,0x64,0x00,0x00,0x00,0x00
+}
+0x8000|0x1f8000
+gArmTokenSpaceGuid.PcdFvBaseAddress|gArmTokenSpaceGuid.PcdFvSize
+FV = FVMAIN_COMPACT
+
+[FV.FVMAIN]
+FvAlignment = 8
+ERASE_POLARITY = 1
+MEMORY_MAPPED = TRUE
+READ_ENABLED_CAP = TRUE
+READ_STATUS = TRUE
+WRITE_ENABLED_CAP = TRUE
+WRITE_STATUS = TRUE
+APRIORI DXE {
+  INF MdeModulePkg/Core/RuntimeDxe/RuntimeDxe.inf
+  INF MdeModulePkg/Universal/SecurityStubDxe/SecurityStubDxe.inf
+  INF EmbeddedPkg/MetronomeDxe/MetronomeDxe.inf
+  INF SonyProbe/SonyDxeProbe.inf
+}
+INF MdeModulePkg/Core/Dxe/DxeMain.inf
+INF MdeModulePkg/Core/RuntimeDxe/RuntimeDxe.inf
+INF MdeModulePkg/Universal/SecurityStubDxe/SecurityStubDxe.inf
+INF EmbeddedPkg/MetronomeDxe/MetronomeDxe.inf
+INF SonyProbe/SonyUiApp.inf
+INF SonyProbe/ResidentApp.inf
+INF SonyProbe/SonyDxeProbe.inf
+
+[FV.FVMAIN_COMPACT]
+FvAlignment = 8
+ERASE_POLARITY = 1
+MEMORY_MAPPED = TRUE
+READ_ENABLED_CAP = TRUE
+READ_STATUS = TRUE
+WRITE_ENABLED_CAP = TRUE
+WRITE_STATUS = TRUE
+INF ArmPlatformPkg/PrePi/PeiUniCore.inf
+FILE FV_IMAGE = 9E21FD93-9C72-4c15-8C4B-E77F1DB2D792 {
+  SECTION GUIDED EE4E5898-3914-4259-9D6E-DC7BD79403CF PROCESSING_REQUIRED = TRUE {
+    SECTION FV_IMAGE = FVMAIN
+  }
+}
+[Rule.Common.SEC]
+  FILE SEC = $(NAMED_GUID) RELOCS_STRIPPED {
+    TE TE Align = 4K $(INF_OUTPUT)/$(MODULE_NAME).efi
+  }
+[Rule.Common.DXE_CORE]
+  FILE DXE_CORE = $(NAMED_GUID) {
+    PE32 PE32 $(INF_OUTPUT)/$(MODULE_NAME).efi
+    UI STRING="$(MODULE_NAME)" Optional
+  }
+[Rule.Common.DXE_DRIVER]
+  FILE DRIVER = $(NAMED_GUID) {
+    DXE_DEPEX DXE_DEPEX Optional $(INF_OUTPUT)/$(MODULE_NAME).depex
+    PE32 PE32 $(INF_OUTPUT)/$(MODULE_NAME).efi
+    UI STRING="$(MODULE_NAME)" Optional
+  }
+[Rule.Common.DXE_RUNTIME_DRIVER]
+  FILE DRIVER = $(NAMED_GUID) {
+    DXE_DEPEX DXE_DEPEX Optional $(INF_OUTPUT)/$(MODULE_NAME).depex
+    PE32 PE32 $(INF_OUTPUT)/$(MODULE_NAME).efi
+    UI STRING="$(MODULE_NAME)" Optional
+  }
+[Rule.Common.UEFI_APPLICATION]
+  FILE APPLICATION = $(NAMED_GUID) {
+    UI STRING="$(MODULE_NAME)" Optional
+    PE32 PE32 $(INF_OUTPUT)/$(MODULE_NAME).efi
+  }

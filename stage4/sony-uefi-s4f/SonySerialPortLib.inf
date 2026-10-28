@@ -1,0 +1,11 @@
+[Defines]
+  INF_VERSION = 0x00010019
+  BASE_NAME = SonyRetainedSerialPortLib
+  FILE_GUID = 97b353b8-2b9a-4b2e-90ea-3a7d264fb435
+  MODULE_TYPE = BASE
+  VERSION_STRING = 0.1
+  LIBRARY_CLASS = SerialPortLib
+[Sources]
+  SonySerialPortLib.c
+[Packages]
+  MdePkg/MdePkg.dec

@@ -1,0 +1,19 @@
+{
+  "userland_abi_emulation_acceptance_passed": true,
+  "target": "iOS16.5 20F66 arm64",
+  "custom_dynamic_probe_via_apple_dyld_and_shared_cache": true,
+  "probe_exit_status": 7,
+  "apple_launchd_executed": true,
+  "apple_services_spawned_via_xpcproxy": true,
+  "launchd_sha256_reported": "4c61512d19b9a55a6ddad27e23b88fc5008fbf77d0c0b5e6bdd7c7d90cef3e06",
+  "native_sony_apple_userland_proven": false,
+  "ui_or_touch_proven": false,
+  "evidence_source": "Cloud execution report and its serial excerpts; original full guest log remains in cloud ignored out/",
+  "raw_guest_log_local": false,
+  "exact_report_and_script_git_blobs_verified": true,
+  "kernel_sha_matches_native_r21_input": true,
+  "apple_manifest_sha_matches_independent_aliyun_fetch": true,
+  "resource_reason": "Full guest resident working set exceeds Aliyun available ~1GiB; source build remains on Aliyun",
+  "kernel_source_build_status": "separate Aliyun job; not accepted by this report",
+  "next": "Finish source kernel no-PAN audit and reconnect it to measured Sony loader/ADT"
+}

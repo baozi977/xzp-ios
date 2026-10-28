@@ -1,0 +1,39 @@
+[Defines]
+  INF_VERSION = 0x00010019
+  BASE_NAME = SonyUniXnuUi
+  FILE_GUID = 32cadc91-497b-4e46-8349-102820260001
+  MODULE_TYPE = UEFI_APPLICATION
+  VERSION_STRING = U07
+  ENTRY_POINT = SonyUiEntry
+[Sources]
+  SonyUiApp.c
+  SonyGop.c
+  SonyInput.c
+  UniXNU/Menu.c
+  UniXNU/Ui.c
+  UniXNU/Font.c
+  UniXNU/Logo.c
+[Packages]
+  MdePkg/MdePkg.dec
+  MdeModulePkg/MdeModulePkg.dec
+  SonyProbe/UniXNUPkg.dec
+[LibraryClasses]
+  UefiApplicationEntryPoint
+  UefiBootServicesTableLib
+  UefiRuntimeServicesTableLib
+  UefiLib
+  BaseLib
+  BaseMemoryLib
+  MemoryAllocationLib
+  PrintLib
+  DebugLib
+  SerialPortLib
+  IoLib
+  TimerLib
+  DxeServicesLib
+  DevicePathLib
+[Protocols]
+  gEfiGraphicsOutputProtocolGuid
+  gEfiSimpleTextInProtocolGuid
+  gEfiDevicePathProtocolGuid
+  gUniXNUMenuPluginProtocolGuid

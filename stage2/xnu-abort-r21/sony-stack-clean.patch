@@ -1,0 +1,17 @@
+--- a/LoaderJump.h
++++ b/LoaderJump.h
+@@ -6,10 +6,10 @@
+                 "msr daifset, #0xf\n"
+                 /* Last thing before the MMU goes off: write this stack back to RAM
+                  * (dirty cache lines do not survive, and we come back to this frame). */
+-                "mov x2, sp\n"
+-                "sub x2, x2, #0x400\n"
+-                "bic x2, x2, #63\n"
+-                "add x3, x2, #0x4000\n"
++                /* The verified Sony primary stack is [0xa3fc0000,0xa4000000).
++                 * Cleaning above its end faults on the physical handset. */
++                "movz x2, #0xa3fc, lsl #16\n"
++                "movz x3, #0xa400, lsl #16\n"
+                 "1: dc cvac, x2\n"
+                 "add x2, x2, #64\n"
+                 "cmp x2, x3\n"

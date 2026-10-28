@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "purpose": "Fixed research inputs from the 2026-10-26 handover; not fetched or executed by setup",
+  "repositories": {
+    "linux_sony_los20": {
+      "url": "https://github.com/whatawurst/android_kernel_sony_msm8998.git",
+      "commit": "3c398ab488c7f80082e36c26725eb69814e57872"
+    },
+    "hackios_kernel": {
+      "url": "https://github.com/oosexgang/hackios-xnu-kernel.git",
+      "commit": "d82c64a3a31cd27a0a0afbf6e213e467e44b1b4c"
+    },
+    "hackios_userland": {
+      "url": "https://github.com/oosexgang/hackios-xnu-userland.git",
+      "commit": "a79ff0772a3454fd1ef127e181e5b3bce6c9ce18"
+    },
+    "msm8998_reference": {
+      "url": "https://github.com/DinnerABC/UniXNU-cheeseburger.git",
+      "commit": "2508a592d0672134cd97f081c7aea8cfab54a5e3"
+    },
+    "unixnu_menu": {
+      "url": "https://github.com/UniXNU/UniXNU",
+      "commit": "0fc0fc1f9ddd0fbd4787738afef38667df5e0a95"
+    }
+  },
+  "fit_reproduction": {
+    "kernel_release": "4.4.302-xzpios-fit",
+    "gcc": "9.4.0",
+    "binutils": "2.35.2",
+    "kcflags": "-falign-functions=4",
+    "config_sha256": "d8970a49cf6d302f8108a4541fded648a75acaace2fcb78ea1cbfb9de50737e6",
+    "requires_private_build_evidence": true
+  },
+  "xnu_build": {
+    "apple_tag": "xnu-8796.121.2",
+    "sdk": "iPhoneOS16.5.sdk",
+    "sdk_included": false,
+    "upstream_tested_clang": "22.1",
+    "distro_clang_is_not_claimed_equivalent": true
+  }
+}

@@ -1,0 +1,1338 @@
+{
+  "files": [
+    {
+      "path": ".gitignore",
+      "bytes": 96,
+      "sha256": "7a9dc432a9b7ba9258394703e0f82c601cb823a02123b8f914536e1b0d2001ee"
+    },
+    {
+      "path": "BUILD.md",
+      "bytes": 2135,
+      "sha256": "6cf94e2d891dd2c2b5900b4341727d368e572c3f7fd6ed8843c4e4197c761afb"
+    },
+    {
+      "path": "evidence/sony-stage4-20261028-s4f/verified-result.json",
+      "bytes": 895,
+      "sha256": "fd7d64b00b5ba67c2fac5e689cdbed3fc0783063a78b1aa6dc39686be1333a13"
+    },
+    {
+      "path": "evidence/sony-stage4-20261028-s4j/verified-result.json",
+      "bytes": 1910,
+      "sha256": "5f7a7b534373f6ef2bd46132ff91a506bcf824f1b2b4a1771612ed015d8b9a4a"
+    },
+    {
+      "path": "evidence/stage2-xnu-20261027-r21/stage2-acceptance.json",
+      "bytes": 1816,
+      "sha256": "d76c12a5a3329eafebb125dfdf176debe4e9678e2861e9673939bfc39c759586"
+    },
+    {
+      "path": "evidence/stage3-20261027/userland-abi-verification.json",
+      "bytes": 1051,
+      "sha256": "2622c1f56c7a85aa9aab72d74dc6bf60beef1e8f6f58e9e009c6689ace6f6853"
+    },
+    {
+      "path": "EXPORT-MANIFEST.json",
+      "bytes": 59727,
+      "sha256": "635c195066913d14f5ace547641c6be02672c526573ef9321250f9eaf4bc9f0a"
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 1231,
+      "sha256": "d0ae486a6bee8ab5a22ab0b16a34fed9cd49f46bae246451b5c454a853648db3"
+    },
+    {
+      "path": "LICENSES/APSL-2.0.txt",
+      "bytes": 19830,
+      "sha256": "30a35b75a4019e2a11863d1eab3f90391aec8d708cabcaffb59cc329b2801f0a"
+    },
+    {
+      "path": "LICENSES/HackiOS-Kernel-LICENSE",
+      "bytes": 19830,
+      "sha256": "30a35b75a4019e2a11863d1eab3f90391aec8d708cabcaffb59cc329b2801f0a"
+    },
+    {
+      "path": "LICENSES/HackiOS-Userland-LICENSE",
+      "bytes": 1372,
+      "sha256": "f03e19d4b42362cacf0be062d9d54b634e262702f516b602320f5530d4f5f002"
+    },
+    {
+      "path": "LICENSES/UniXNU-LICENSE",
+      "bytes": 2673,
+      "sha256": "5b1d3d911103cb0f41641ec0964c5ac1f7e229f57aa072b6ac38bae913a1307b"
+    },
+    {
+      "path": "README.md",
+      "bytes": 1938,
+      "sha256": "499b87b89689be132015e4a61e7ee4ded304004c0b9c5fd4cb08e46e64a33728"
+    },
+    {
+      "path": "reports/STAGE1-ENTRY-LOG-20261027.zh-CN.md",
+      "bytes": 4674,
+      "sha256": "126cd5d5c1cecb81595ddd0e644312a5727e9552e56cfcf6f9e9b4588f74d466"
+    },
+    {
+      "path": "reports/STAGE1-SONY-UEFI-20261027.zh-CN.md",
+      "bytes": 3968,
+      "sha256": "334a29f79f6fe8fc5561954f64d6d88ea2ce3c3bcb76a2febe5acb74fa04adee"
+    },
+    {
+      "path": "reports/STAGE2-NATIVE-PID1-20261027.zh-CN.md",
+      "bytes": 5792,
+      "sha256": "414fd4c05ed4f446d1baec2fe2b06818a1a15a9727f73e0a498a27dc092c510f"
+    },
+    {
+      "path": "reports/STAGE3-ACCEPTANCE-20261028.zh-CN.md",
+      "bytes": 3602,
+      "sha256": "a8d6dc09ff5be88bb9e1e78d90db226f2d5beeefcaae84d4f9f790dcf085df66"
+    },
+    {
+      "path": "reports/STAGE3-REUSE-20261028.zh-CN.md",
+      "bytes": 7008,
+      "sha256": "be89dd0d3aea0ab4598a4387428ae72b42e3432f27a7d9da47ff9405cb46b669"
+    },
+    {
+      "path": "reports/STAGE4-ACCEPTANCE-20261028.zh-CN.md",
+      "bytes": 4995,
+      "sha256": "b7993f14a71f44d6b8f8cc6d68abea863a616fa23782becff230fb45a04e7ddf"
+    },
+    {
+      "path": "reports/STAGE4-XNU-STORAGE-20261028.zh-CN.md",
+      "bytes": 2307,
+      "sha256": "ea0238b8727482553134a0162d91a7bf9d3524f7197e84570ce43f5076aeebd9"
+    },
+    {
+      "path": "reports/UEFI-DISPLAY-FIX-20261028.zh-CN.md",
+      "bytes": 2834,
+      "sha256": "05b27afbd73d16aa6c015eef0ae917c3a61913b5bb0e4c61a0b1360bf9804d9c"
+    },
+    {
+      "path": "reports/UEFI-UI-ACCEPTANCE-20261028.zh-CN.md",
+      "bytes": 3440,
+      "sha256": "ee58bf0bf2f1ca81c95e109165a98a8a5aa3681e7f6372299bbd159fe06972c1"
+    },
+    {
+      "path": "scripts/build_pid1_macho.py",
+      "bytes": 2655,
+      "sha256": "71bf1527f01172a059d121adaa21b5fa184c455df7e106384275487b061e6104"
+    },
+    {
+      "path": "scripts/fix_stage4j_page_policy.py",
+      "bytes": 1957,
+      "sha256": "0818f7c1d956ffdd088321d3f476e26129d74531b523d784802ba139d071a1e1"
+    },
+    {
+      "path": "scripts/generate_source_kernel_contract.py",
+      "bytes": 3745,
+      "sha256": "ccc59d2b074d07f364100c43bf269c245fb720a0f2a93966c04c7515b722d651"
+    },
+    {
+      "path": "scripts/inspect_stage4j_native.py",
+      "bytes": 2163,
+      "sha256": "6cf7fd6a0166a02505b71a0e723fcbb6df3ccd7a16115735e818b2270e58ad2a"
+    },
+    {
+      "path": "scripts/verify_stage4f_native.py",
+      "bytes": 3354,
+      "sha256": "d635bdac103d7b6a679196ad3c6f853080a129dc833f8b456051ca38b60206c5"
+    },
+    {
+      "path": "scripts/verify_stage4j_native.py",
+      "bytes": 4430,
+      "sha256": "fe8cc566f8095aa63626205027455a0207190fc8dcb383cf123ce8239e5f2e28"
+    },
+    {
+      "path": "stage1/entry-probe/build_worker.py",
+      "bytes": 4656,
+      "sha256": "72490021f444479e1e87fe4f2a06e6156ffae1ef133dea09e23633fd2ea9bb85"
+    },
+    {
+      "path": "stage1/entry-probe/entry.S",
+      "bytes": 3306,
+      "sha256": "9efcf9b01b3c3a710702673f4b89c5a0aec48b61d0d65bbadf0d9bc752c11514"
+    },
+    {
+      "path": "stage1/entry-probe/link.ld",
+      "bytes": 117,
+      "sha256": "4f87097114c6f2fa4f967301ca54cd3bac547dd4f8a20e9eea2b947f5e45c786"
+    },
+    {
+      "path": "stage1/sony-display-probe/AArch64/ArmPlatformHelper.S",
+      "bytes": 2169,
+      "sha256": "1b0bfb56afc69d92e4f77a09149ac55f8ddc99e35a75be994fa46ab44817797c"
+    },
+    {
+      "path": "stage1/sony-display-probe/build_worker.py",
+      "bytes": 3131,
+      "sha256": "f9415e71b828ad2d4a64982ae43480c821e08a5bf929eed8b8d85f5c7856521d"
+    },
+    {
+      "path": "stage1/sony-display-probe/README.md",
+      "bytes": 1244,
+      "sha256": "11e51bfcf182fead255e14a5161eb206ba3fd46972b60873c915b4b6f0d222e9"
+    },
+    {
+      "path": "stage1/sony-display-probe/Sony.dsc",
+      "bytes": 2076,
+      "sha256": "3e94c36910250298945f0e4179cd689f4f6983f410defa61799db25ba0df8f4b"
+    },
+    {
+      "path": "stage1/sony-display-probe/Sony.fdf",
+      "bytes": 1791,
+      "sha256": "1c575712d8540e140fa896906b2fac44e67d434c97f7f146898a5ba38792f94c"
+    },
+    {
+      "path": "stage1/sony-display-probe/SonyArmPlatformLib.c",
+      "bytes": 3549,
+      "sha256": "4738eeac427bf468b386f141db6eaf15bd7d9ea95523ee8de49d9ccb1179121d"
+    },
+    {
+      "path": "stage1/sony-display-probe/SonyArmPlatformLib.inf",
+      "bytes": 1416,
+      "sha256": "94e63733690d0d4379e92ad9aeb4f61aa80c363394a8a39ed35cb57af6fe68e2"
+    },
+    {
+      "path": "stage1/sony-display-probe/SonyCommon.dsc.inc",
+      "bytes": 19130,
+      "sha256": "522746f250e24cf1f9a6c35106702d03c0581d6b52cf90cfb44a31a6f413b2d9"
+    },
+    {
+      "path": "stage1/sony-display-probe/SonyDxeProbe.c",
+      "bytes": 3533,
+      "sha256": "fb79bce6b27b908a9299810e6c3f39263fa838ec1641cf18b78254026b41dbb0"
+    },
+    {
+      "path": "stage1/sony-display-probe/SonyDxeProbe.inf",
+      "bytes": 390,
+      "sha256": "bb8d91ae81b79accc02de5c093ce2ff183d23bb44318c9d32046a6eb15df962a"
+    },
+    {
+      "path": "stage1/sony-display-probe/SonyMemoryInit.c",
+      "bytes": 1819,
+      "sha256": "9af5b73f878893cab1b4206612c03cb9382739833ea4c8dae33103949680809c"
+    },
+    {
+      "path": "stage1/sony-display-probe/SonyMemoryInit.inf",
+      "bytes": 324,
+      "sha256": "e39e1c41947e39a499f2ae99fe33e03f7a5ad1c041fa2040999a6cfb2a774d7e"
+    },
+    {
+      "path": "stage1/sony-display-probe/SonySerialPortLib.c",
+      "bytes": 2301,
+      "sha256": "3e182225a56c56adc95831f31bddd56009fc40defdeb97f7726eb914c861b893"
+    },
+    {
+      "path": "stage1/sony-display-probe/SonySerialPortLib.inf",
+      "bytes": 267,
+      "sha256": "bedb8e5180ee192b3b453b78808fe19cd6beccfc713d1954dd95ce2840948471"
+    },
+    {
+      "path": "stage1/sony-uefi/AArch64/ArmPlatformHelper.S",
+      "bytes": 2169,
+      "sha256": "1b0bfb56afc69d92e4f77a09149ac55f8ddc99e35a75be994fa46ab44817797c"
+    },
+    {
+      "path": "stage1/sony-uefi/build_worker.py",
+      "bytes": 3032,
+      "sha256": "05936da11aaa38f042cc9f23aa60eb4a7cbc97bc062edec280f84a74afff4675"
+    },
+    {
+      "path": "stage1/sony-uefi/README.md",
+      "bytes": 2809,
+      "sha256": "eccbd73f7478ac7ddc3898bacd70d9318a9091f25d9a18c829f512cfd8eb8b4f"
+    },
+    {
+      "path": "stage1/sony-uefi/Sony.dsc",
+      "bytes": 2064,
+      "sha256": "7e2a9b7b0549e46975e2312598ff7b8c0b5f892b82ee5128a5407ae14c72edf9"
+    },
+    {
+      "path": "stage1/sony-uefi/Sony.fdf",
+      "bytes": 1791,
+      "sha256": "1c575712d8540e140fa896906b2fac44e67d434c97f7f146898a5ba38792f94c"
+    },
+    {
+      "path": "stage1/sony-uefi/SonyArmPlatformLib.c",
+      "bytes": 3549,
+      "sha256": "4738eeac427bf468b386f141db6eaf15bd7d9ea95523ee8de49d9ccb1179121d"
+    },
+    {
+      "path": "stage1/sony-uefi/SonyArmPlatformLib.inf",
+      "bytes": 1416,
+      "sha256": "94e63733690d0d4379e92ad9aeb4f61aa80c363394a8a39ed35cb57af6fe68e2"
+    },
+    {
+      "path": "stage1/sony-uefi/SonyCommon.dsc.inc",
+      "bytes": 19130,
+      "sha256": "522746f250e24cf1f9a6c35106702d03c0581d6b52cf90cfb44a31a6f413b2d9"
+    },
+    {
+      "path": "stage1/sony-uefi/SonyDxeProbe.c",
+      "bytes": 1712,
+      "sha256": "edf5f1c0849246ac2ba70dc8ce10f42413ce9e7f722fba351ccba5688b381962"
+    },
+    {
+      "path": "stage1/sony-uefi/SonyDxeProbe.inf",
+      "bytes": 382,
+      "sha256": "93c0ec46b9964bea8a3baf47979a7a2fc19756338395254d6ca82ae4b92906ed"
+    },
+    {
+      "path": "stage1/sony-uefi/SonyMemoryInit.c",
+      "bytes": 1741,
+      "sha256": "870c4e107ae0aafcd414a748c916c1ef521b9e90befe4f342df4cf7a274b3691"
+    },
+    {
+      "path": "stage1/sony-uefi/SonyMemoryInit.inf",
+      "bytes": 324,
+      "sha256": "e39e1c41947e39a499f2ae99fe33e03f7a5ad1c041fa2040999a6cfb2a774d7e"
+    },
+    {
+      "path": "stage1/sony-uefi/SonySerialPortLib.c",
+      "bytes": 2301,
+      "sha256": "3e182225a56c56adc95831f31bddd56009fc40defdeb97f7726eb914c861b893"
+    },
+    {
+      "path": "stage1/sony-uefi/SonySerialPortLib.inf",
+      "bytes": 267,
+      "sha256": "bedb8e5180ee192b3b453b78808fe19cd6beccfc713d1954dd95ce2840948471"
+    },
+    {
+      "path": "stage2/common/GicPrepare.h",
+      "bytes": 7184,
+      "sha256": "53d3d2f9366580b67a8b43b18cf3ca04c078b3df430492d8fb31d0625dab097c"
+    },
+    {
+      "path": "stage2/pid1-heartbeat/pid1.c",
+      "bytes": 1325,
+      "sha256": "158b3545dd15f06e10490f01a3272303637d94960d1734574890a51dd7f4332a"
+    },
+    {
+      "path": "stage2/pid1-heartbeat/pid1.ld",
+      "bytes": 208,
+      "sha256": "9f3fea2439cbb27940e09a0b0a7494ffad497feac3d202d6f9540b4cb2878545"
+    },
+    {
+      "path": "stage2/pid1-heartbeat/README.md",
+      "bytes": 1015,
+      "sha256": "a9044d15d9f4713e63fab90459ad96ec6c2ad35c1c4b0f69819c7ad745363793"
+    },
+    {
+      "path": "stage2/xnu-abort-r21/AArch64/ArmPlatformHelper.S",
+      "bytes": 2468,
+      "sha256": "927a89cf4a6ca4a827375aac3cbbc8fd9017b056ee952bdbd58d707c1626e1d0"
+    },
+    {
+      "path": "stage2/xnu-abort-r21/build_worker.py",
+      "bytes": 3814,
+      "sha256": "81d496869d0bf9e7a83d1464b365778eb3e881c77c69cbcd6dd5bbb396b42d9d"
+    },
+    {
+      "path": "stage2/xnu-abort-r21/GicPrepare.h",
+      "bytes": 7184,
+      "sha256": "53d3d2f9366580b67a8b43b18cf3ca04c078b3df430492d8fb31d0625dab097c"
+    },
+    {
+      "path": "stage2/xnu-abort-r21/KernelStage.h",
+      "bytes": 4238,
+      "sha256": "dbd8183790f4d083eb2e879cec173613a56ee02cd527954909e1924d1b45ea0d"
+    },
+    {
+      "path": "stage2/xnu-abort-r21/LoaderContext.h",
+      "bytes": 663,
+      "sha256": "1b6afef05cd29383ded161ca3302bc400be56b106d4d652f68533dccf9ca6516"
+    },
+    {
+      "path": "stage2/xnu-abort-r21/LoaderJump.h",
+      "bytes": 1299,
+      "sha256": "295ec2c93c9c7d8872907e33cbff39c3287ae69b6f807d3f4c7f750dfe75e541"
+    },
+    {
+      "path": "stage2/xnu-abort-r21/LoaderReturn.S",
+      "bytes": 4193,
+      "sha256": "7093ca37225059eee0e1ba47e2ad25505fc9c7da3837c8ec1ede894e6a76cb08"
+    },
+    {
+      "path": "stage2/xnu-abort-r21/NvramImage.h",
+      "bytes": 16457,
+      "sha256": "a95d71586d7318b1ce26c5e36f0c39ffbc8ab3a09eab23b963fca7251ef6a1f9"
+    },
+    {
+      "path": "stage2/xnu-abort-r21/README.md",
+      "bytes": 711,
+      "sha256": "4d98ff52f491c327ed40f5090505c81e050c9cd3353f8227995a48537dddf0e0"
+    },
+    {
+      "path": "stage2/xnu-abort-r21/ResidentApp.c",
+      "bytes": 5795,
+      "sha256": "b4a874ebaabb5a9025f7ce61d577bf64dc7052d67961877ad5e0e6da5e69f2e4"
+    },
+    {
+      "path": "stage2/xnu-abort-r21/ResidentApp.inf",
+      "bytes": 497,
+      "sha256": "63812557d4e1e151655a109ce767c749541ce7f6c05c23519b3b23e5631f516f"
+    },
+    {
+      "path": "stage2/xnu-abort-r21/sony-stack-clean.patch",
+      "bytes": 778,
+      "sha256": "6217f541af08b03f113aa38e7d415b1a9c735d17fd245729b50f02b442eb32bb"
+    },
+    {
+      "path": "stage2/xnu-abort-r21/Sony.dsc",
+      "bytes": 2256,
+      "sha256": "9b2bb02bca05d6f4d8b0904e18903dc0fd14c61b4e09f9235c4cb957408ab818"
+    },
+    {
+      "path": "stage2/xnu-abort-r21/Sony.fdf",
+      "bytes": 2524,
+      "sha256": "480b5c1286ad855a0454b51ff46cec96d72f707aebbd8b1606a15c120e3414f2"
+    },
+    {
+      "path": "stage2/xnu-abort-r21/SonyArmPlatformLib.c",
+      "bytes": 3549,
+      "sha256": "4738eeac427bf468b386f141db6eaf15bd7d9ea95523ee8de49d9ccb1179121d"
+    },
+    {
+      "path": "stage2/xnu-abort-r21/SonyArmPlatformLib.inf",
+      "bytes": 1416,
+      "sha256": "94e63733690d0d4379e92ad9aeb4f61aa80c363394a8a39ed35cb57af6fe68e2"
+    },
+    {
+      "path": "stage2/xnu-abort-r21/SonyCommon.dsc.inc",
+      "bytes": 19085,
+      "sha256": "f03029813699623c150d2ffdc450c71f4c57e0d73b1be5f7b222a20a7b20f7c3"
+    },
+    {
+      "path": "stage2/xnu-abort-r21/SonyCrashLib.c",
+      "bytes": 1093,
+      "sha256": "a9b921fa4cdc77cf89e80e20ffbd23ec25d77c3812c1eda9f3c0e3907a91b95f"
+    },
+    {
+      "path": "stage2/xnu-abort-r21/SonyCrashLib.inf",
+      "bytes": 363,
+      "sha256": "6b5c937bb70ee1bd71d1be73ffb2ca4880fb1261b3722b8d11750ddd938f0b6d"
+    },
+    {
+      "path": "stage2/xnu-abort-r21/SonyDxeProbe.c",
+      "bytes": 2656,
+      "sha256": "beee46a841db4dec7899b6eaa7943732417a4a83436ad0bc166d93b6c865c5f6"
+    },
+    {
+      "path": "stage2/xnu-abort-r21/SonyDxeProbe.inf",
+      "bytes": 577,
+      "sha256": "08ecb391b2fbbf606b0b1fdecf84a2292583717bc37e1d6f5d1b5484eee20f94"
+    },
+    {
+      "path": "stage2/xnu-abort-r21/SonyMemoryInit.c",
+      "bytes": 2736,
+      "sha256": "539b24830dff1df9e0ff566940812626b8eb12f72bb596188167861020de54e1"
+    },
+    {
+      "path": "stage2/xnu-abort-r21/SonyMemoryInit.inf",
+      "bytes": 324,
+      "sha256": "e39e1c41947e39a499f2ae99fe33e03f7a5ad1c041fa2040999a6cfb2a774d7e"
+    },
+    {
+      "path": "stage2/xnu-abort-r21/SonySerialPortLib.c",
+      "bytes": 2301,
+      "sha256": "3e182225a56c56adc95831f31bddd56009fc40defdeb97f7726eb914c861b893"
+    },
+    {
+      "path": "stage2/xnu-abort-r21/SonySerialPortLib.inf",
+      "bytes": 267,
+      "sha256": "bedb8e5180ee192b3b453b78808fe19cd6beccfc713d1954dd95ce2840948471"
+    },
+    {
+      "path": "stage2/xnu-abort-r21/XnuBoot.h",
+      "bytes": 9328,
+      "sha256": "8195ced2b8ef21cb4873ea7585abdcabfa8d08beedbb070c5b169c041d7882b0"
+    },
+    {
+      "path": "stage3/apple-runtime/scripts/phase3/apple-userland-host.patch",
+      "bytes": 3019,
+      "sha256": "29b0c9e05f3908711221312749b231e1ce1ad6cdaac46b307263320317e621e6"
+    },
+    {
+      "path": "stage3/apple-runtime/scripts/phase3/run-apple-userland.sh",
+      "bytes": 1105,
+      "sha256": "110babb2940b8d2e7b1fb9edfa8fa9e91922055c2ddbeb277d9c681f0e87ae00"
+    },
+    {
+      "path": "stage3/cloud-runtime/scripts/stage3/audit_downloaded_member.py",
+      "bytes": 1403,
+      "sha256": "ebf76c15a18636d8057d9fc6a93127887b0c230ab9de5af91ee75f6d52c9ac0c"
+    },
+    {
+      "path": "stage3/cloud-runtime/scripts/stage3/fetch_verified_member.py",
+      "bytes": 4189,
+      "sha256": "2210fb193d24521768c2bc3d9a2b5e20487b575eae94283e0b72bd53b396aa05"
+    },
+    {
+      "path": "stage3/cloud-runtime/scripts/stage3/patches/0001-prebuilt-optional-drawable-test.patch",
+      "bytes": 1618,
+      "sha256": "3c44d1c9fc76ecdfaf92940f57f4c7a65e9e09f5013041d8ee6633101759a3b6"
+    },
+    {
+      "path": "stage3/cloud-runtime/scripts/stage3/prepare_workspace.sh",
+      "bytes": 1571,
+      "sha256": "bf49a3d4423c21af4c342537d1bb18299f32cf0e49f4bdc2c8e1150f42856fcf"
+    },
+    {
+      "path": "stage3/cloud-runtime/scripts/stage3/run_bounded_qemu.sh",
+      "bytes": 1111,
+      "sha256": "f0bc5f3accc305f63348d3b1250ff17dd1b9803d24d28bb7634ec50dd31b27cc"
+    },
+    {
+      "path": "stage3/cloud-runtime/scripts/stage3/verify_build_manifest.py",
+      "bytes": 1535,
+      "sha256": "404c12dcc85e7817b5d6f064841a435f95a1de217a34a99b92787aaf3ca57d3a"
+    },
+    {
+      "path": "stage3/sony-uefi-ui-u07/AArch64/ArmPlatformHelper.S",
+      "bytes": 2468,
+      "sha256": "afb356f26ceef1e545c9384a7654457eb02f55f79face8be2da77ca67a910ec0"
+    },
+    {
+      "path": "stage3/sony-uefi-ui-u07/build_worker.py",
+      "bytes": 3898,
+      "sha256": "84c007347f545f93fcf051b6590bd7329d6d7c6c9acb41f0c3a9d31976098c45"
+    },
+    {
+      "path": "stage3/sony-uefi-ui-u07/GicPrepare.h",
+      "bytes": 7184,
+      "sha256": "53d3d2f9366580b67a8b43b18cf3ca04c078b3df430492d8fb31d0625dab097c"
+    },
+    {
+      "path": "stage3/sony-uefi-ui-u07/Include/Library/UniXNULib.h",
+      "bytes": 1167,
+      "sha256": "8444339ac4a4627ae379a9d3e8e440304f23ff14d5487a5340914fa53cd218f7"
+    },
+    {
+      "path": "stage3/sony-uefi-ui-u07/Include/Protocol/UniXNULoader.h",
+      "bytes": 2386,
+      "sha256": "4853991ceac062a2bd3d8d36d262d0cf09b1fe751c44813e267371cd93479cbb"
+    },
+    {
+      "path": "stage3/sony-uefi-ui-u07/Include/Protocol/UniXNUMenuPlugin.h",
+      "bytes": 2186,
+      "sha256": "eb897e32cb4c260818dd89603176f8ff3879bff209dfd1b24fc49e003436d534"
+    },
+    {
+      "path": "stage3/sony-uefi-ui-u07/KernelContract.h",
+      "bytes": 413,
+      "sha256": "7bee14ea31b1d3f79dd92fdf50a1f048dce0567d598701ad2f3a46176d0bc31b"
+    },
+    {
+      "path": "stage3/sony-uefi-ui-u07/KernelStage.h",
+      "bytes": 4238,
+      "sha256": "feffbc0ff654b194362cb40ac6ff55fd4f9776b0a6512b4525b94ac5994822c2"
+    },
+    {
+      "path": "stage3/sony-uefi-ui-u07/LoaderContext.h",
+      "bytes": 663,
+      "sha256": "1b6afef05cd29383ded161ca3302bc400be56b106d4d652f68533dccf9ca6516"
+    },
+    {
+      "path": "stage3/sony-uefi-ui-u07/LoaderJump.h",
+      "bytes": 1299,
+      "sha256": "295ec2c93c9c7d8872907e33cbff39c3287ae69b6f807d3f4c7f750dfe75e541"
+    },
+    {
+      "path": "stage3/sony-uefi-ui-u07/LoaderReturn.S",
+      "bytes": 4193,
+      "sha256": "b6e7487d6680cd4aaeadc2c532cf38c78822850eb02eaf4c903b59fc8a99033d"
+    },
+    {
+      "path": "stage3/sony-uefi-ui-u07/NvramImage.h",
+      "bytes": 16457,
+      "sha256": "a95d71586d7318b1ce26c5e36f0c39ffbc8ab3a09eab23b963fca7251ef6a1f9"
+    },
+    {
+      "path": "stage3/sony-uefi-ui-u07/README.md",
+      "bytes": 1929,
+      "sha256": "0b2df3265a176572e08d98aad8e30d0bea1242eea86d6a63cf367b76a8dcfbc1"
+    },
+    {
+      "path": "stage3/sony-uefi-ui-u07/ResidentApp.c",
+      "bytes": 5795,
+      "sha256": "ff881e932b1f4dae2dd6839553a9900075585bade369e3284cb80c8a71e90027"
+    },
+    {
+      "path": "stage3/sony-uefi-ui-u07/ResidentApp.inf",
+      "bytes": 497,
+      "sha256": "63812557d4e1e151655a109ce767c749541ce7f6c05c23519b3b23e5631f516f"
+    },
+    {
+      "path": "stage3/sony-uefi-ui-u07/Sony.dsc",
+      "bytes": 2280,
+      "sha256": "69bc59270b5f3a5f94cafc4d8dd100bc1a4ced9faa2496134435d33e4b9b807f"
+    },
+    {
+      "path": "stage3/sony-uefi-ui-u07/Sony.fdf",
+      "bytes": 2552,
+      "sha256": "0a835d0cc6ba0f8b41b6ce9062ca743bea002b26494beb415fdb57b071b99edf"
+    },
+    {
+      "path": "stage3/sony-uefi-ui-u07/SonyArmPlatformLib.c",
+      "bytes": 3549,
+      "sha256": "4738eeac427bf468b386f141db6eaf15bd7d9ea95523ee8de49d9ccb1179121d"
+    },
+    {
+      "path": "stage3/sony-uefi-ui-u07/SonyArmPlatformLib.inf",
+      "bytes": 1416,
+      "sha256": "94e63733690d0d4379e92ad9aeb4f61aa80c363394a8a39ed35cb57af6fe68e2"
+    },
+    {
+      "path": "stage3/sony-uefi-ui-u07/SonyCommon.dsc.inc",
+      "bytes": 19085,
+      "sha256": "f03029813699623c150d2ffdc450c71f4c57e0d73b1be5f7b222a20a7b20f7c3"
+    },
+    {
+      "path": "stage3/sony-uefi-ui-u07/SonyCrashLib.c",
+      "bytes": 1093,
+      "sha256": "80c5d7795042633f46bce9b0d7de5a9808c11ae2f351f6e081fdffda9172a3d6"
+    },
+    {
+      "path": "stage3/sony-uefi-ui-u07/SonyCrashLib.inf",
+      "bytes": 363,
+      "sha256": "6b5c937bb70ee1bd71d1be73ffb2ca4880fb1261b3722b8d11750ddd938f0b6d"
+    },
+    {
+      "path": "stage3/sony-uefi-ui-u07/SonyDxeProbe.c",
+      "bytes": 2656,
+      "sha256": "07ac244c86e4698068f23e98ad4253a52e3ff59dd5aa6fa2538d2a522f8cd8d3"
+    },
+    {
+      "path": "stage3/sony-uefi-ui-u07/SonyDxeProbe.inf",
+      "bytes": 577,
+      "sha256": "08ecb391b2fbbf606b0b1fdecf84a2292583717bc37e1d6f5d1b5484eee20f94"
+    },
+    {
+      "path": "stage3/sony-uefi-ui-u07/SonyGop.c",
+      "bytes": 12120,
+      "sha256": "3948c07c65d624d20032687fbe23eb1fdb230dd3a6bc8c1e4b9e0fcba483b0e4"
+    },
+    {
+      "path": "stage3/sony-uefi-ui-u07/SonyInput.c",
+      "bytes": 5435,
+      "sha256": "fa7e2e7c61c8c6bf99f40bf3646dc7826e89536834e56771990e10f213c8322a"
+    },
+    {
+      "path": "stage3/sony-uefi-ui-u07/SonyMemoryInit.c",
+      "bytes": 3206,
+      "sha256": "62e9a41ef34a3a87e9bf93989fe43d9d8ee5582718dfd1725687c17c6009ecf3"
+    },
+    {
+      "path": "stage3/sony-uefi-ui-u07/SonyMemoryInit.inf",
+      "bytes": 324,
+      "sha256": "e39e1c41947e39a499f2ae99fe33e03f7a5ad1c041fa2040999a6cfb2a774d7e"
+    },
+    {
+      "path": "stage3/sony-uefi-ui-u07/SonySerialPortLib.c",
+      "bytes": 2301,
+      "sha256": "3e182225a56c56adc95831f31bddd56009fc40defdeb97f7726eb914c861b893"
+    },
+    {
+      "path": "stage3/sony-uefi-ui-u07/SonySerialPortLib.inf",
+      "bytes": 267,
+      "sha256": "bedb8e5180ee192b3b453b78808fe19cd6beccfc713d1954dd95ce2840948471"
+    },
+    {
+      "path": "stage3/sony-uefi-ui-u07/SonyUiApp.c",
+      "bytes": 5323,
+      "sha256": "be07fb9656f3a2db511f694358679968b213049f8a55e80ca4eec6d060cfa339"
+    },
+    {
+      "path": "stage3/sony-uefi-ui-u07/SonyUiApp.inf",
+      "bytes": 787,
+      "sha256": "74359b8f0abb2da57904394cd43fcd8ff5a97440ca63fcd7e1cceb177ab330dd"
+    },
+    {
+      "path": "stage3/sony-uefi-ui-u07/UniXNU/Font.c",
+      "bytes": 12616,
+      "sha256": "391c7dbc8c6eb3cd07230e3dd8d38e4ba8a5a9b603bcaecb4d8e62a4603d2ac6"
+    },
+    {
+      "path": "stage3/sony-uefi-ui-u07/UniXNU/Internal.h",
+      "bytes": 16111,
+      "sha256": "7acdc37f8c5540bf0df24797bb04ca09dc111414e75c72e8d2ee5f3843a34faf"
+    },
+    {
+      "path": "stage3/sony-uefi-ui-u07/UniXNU/Logo.c",
+      "bytes": 4613,
+      "sha256": "da9d49c502f42c489742d2abaa8a300db1c265b0fcf807e4d7bd3d8aa8a9e4a1"
+    },
+    {
+      "path": "stage3/sony-uefi-ui-u07/UniXNU/LogoShape.h",
+      "bytes": 8266,
+      "sha256": "8fe96788c3c1e27df7f4209c31ae1b3818ae99cf858d6dae457cd16643a6a43b"
+    },
+    {
+      "path": "stage3/sony-uefi-ui-u07/UniXNU/Menu.c",
+      "bytes": 13322,
+      "sha256": "22e7fcb8397689cbdc49d1d1a8a9dead0e9f70855821befac10c836dfb97f2f4"
+    },
+    {
+      "path": "stage3/sony-uefi-ui-u07/UniXNU/Ui.c",
+      "bytes": 27007,
+      "sha256": "7f5a2773424a5a8cc68c12d061744ffd80c2847aa6595625740f41e0b5ea6792"
+    },
+    {
+      "path": "stage3/sony-uefi-ui-u07/UniXNUPkg.dec",
+      "bytes": 2246,
+      "sha256": "08e87df9581889cecc387f01cc7e56586c1db4d63280f5c4600d02d63fd12e8f"
+    },
+    {
+      "path": "stage3/sony-uefi-ui-u07/XnuBoot.h",
+      "bytes": 6842,
+      "sha256": "26ff42cbc4740f08e299b7ea8d448a6249820f1dd4a172ded87590c60eed7cdd"
+    },
+    {
+      "path": "stage3/sony-xnu8796/gic_v3_irq.c",
+      "bytes": 19072,
+      "sha256": "ab799b39c9986ae3fe63ecdad487137720488f2bb4e1ebe37ac04630d2325b71"
+    },
+    {
+      "path": "stage3/sony-xnu8796/sony-no-pan-dt-timer-gic.patch",
+      "bytes": 4575,
+      "sha256": "1092d21416db28b2f91c84fce9178be0b8bc19c8913ca23eaddf348c3807e1b6"
+    },
+    {
+      "path": "stage3/xnu-source-r22/AArch64/ArmPlatformHelper.S",
+      "bytes": 2468,
+      "sha256": "afb356f26ceef1e545c9384a7654457eb02f55f79face8be2da77ca67a910ec0"
+    },
+    {
+      "path": "stage3/xnu-source-r22/build_worker.py",
+      "bytes": 3899,
+      "sha256": "19f033dc377d3482c864a26264c73b776aab28bc1e9132edf7ae7aa419f0cfe5"
+    },
+    {
+      "path": "stage3/xnu-source-r22/GicPrepare.h",
+      "bytes": 7184,
+      "sha256": "53d3d2f9366580b67a8b43b18cf3ca04c078b3df430492d8fb31d0625dab097c"
+    },
+    {
+      "path": "stage3/xnu-source-r22/KernelContract.h",
+      "bytes": 413,
+      "sha256": "7bee14ea31b1d3f79dd92fdf50a1f048dce0567d598701ad2f3a46176d0bc31b"
+    },
+    {
+      "path": "stage3/xnu-source-r22/KernelStage.h",
+      "bytes": 4238,
+      "sha256": "877ec9cece2d528732293f97c6fb6b510c117b2cf9305a4c49f9aa0b352f43e5"
+    },
+    {
+      "path": "stage3/xnu-source-r22/LoaderContext.h",
+      "bytes": 663,
+      "sha256": "1b6afef05cd29383ded161ca3302bc400be56b106d4d652f68533dccf9ca6516"
+    },
+    {
+      "path": "stage3/xnu-source-r22/LoaderJump.h",
+      "bytes": 1299,
+      "sha256": "295ec2c93c9c7d8872907e33cbff39c3287ae69b6f807d3f4c7f750dfe75e541"
+    },
+    {
+      "path": "stage3/xnu-source-r22/LoaderReturn.S",
+      "bytes": 4193,
+      "sha256": "10aa6e2fd71fea2ec98583ebee644ae0dd849bb8c32e286173271a383ff593a9"
+    },
+    {
+      "path": "stage3/xnu-source-r22/NvramImage.h",
+      "bytes": 16457,
+      "sha256": "a95d71586d7318b1ce26c5e36f0c39ffbc8ab3a09eab23b963fca7251ef6a1f9"
+    },
+    {
+      "path": "stage3/xnu-source-r22/README.md",
+      "bytes": 1644,
+      "sha256": "1796e7baa28b522a52392f33335f2ab468ddc36fe15c48c73cfda947ed150a11"
+    },
+    {
+      "path": "stage3/xnu-source-r22/ResidentApp.c",
+      "bytes": 5795,
+      "sha256": "9dc4ecb1e16fa46ca325ceb1921e4ee67b43f743ad89003f51a8fbd35fd10aab"
+    },
+    {
+      "path": "stage3/xnu-source-r22/ResidentApp.inf",
+      "bytes": 497,
+      "sha256": "63812557d4e1e151655a109ce767c749541ce7f6c05c23519b3b23e5631f516f"
+    },
+    {
+      "path": "stage3/xnu-source-r22/Sony.dsc",
+      "bytes": 2256,
+      "sha256": "9b2bb02bca05d6f4d8b0904e18903dc0fd14c61b4e09f9235c4cb957408ab818"
+    },
+    {
+      "path": "stage3/xnu-source-r22/Sony.fdf",
+      "bytes": 2524,
+      "sha256": "480b5c1286ad855a0454b51ff46cec96d72f707aebbd8b1606a15c120e3414f2"
+    },
+    {
+      "path": "stage3/xnu-source-r22/SonyArmPlatformLib.c",
+      "bytes": 3549,
+      "sha256": "4738eeac427bf468b386f141db6eaf15bd7d9ea95523ee8de49d9ccb1179121d"
+    },
+    {
+      "path": "stage3/xnu-source-r22/SonyArmPlatformLib.inf",
+      "bytes": 1416,
+      "sha256": "94e63733690d0d4379e92ad9aeb4f61aa80c363394a8a39ed35cb57af6fe68e2"
+    },
+    {
+      "path": "stage3/xnu-source-r22/SonyCommon.dsc.inc",
+      "bytes": 19085,
+      "sha256": "f03029813699623c150d2ffdc450c71f4c57e0d73b1be5f7b222a20a7b20f7c3"
+    },
+    {
+      "path": "stage3/xnu-source-r22/SonyCrashLib.c",
+      "bytes": 1093,
+      "sha256": "8e925c2a94638e515d8c0f8b003b6c1d22be0689fcd17daa4399cddf1ff661bb"
+    },
+    {
+      "path": "stage3/xnu-source-r22/SonyCrashLib.inf",
+      "bytes": 363,
+      "sha256": "6b5c937bb70ee1bd71d1be73ffb2ca4880fb1261b3722b8d11750ddd938f0b6d"
+    },
+    {
+      "path": "stage3/xnu-source-r22/SonyDxeProbe.c",
+      "bytes": 2656,
+      "sha256": "014e420ac20397a417087755020950c5fbd1bb72c08af57fa793f5c58b5d038e"
+    },
+    {
+      "path": "stage3/xnu-source-r22/SonyDxeProbe.inf",
+      "bytes": 577,
+      "sha256": "08ecb391b2fbbf606b0b1fdecf84a2292583717bc37e1d6f5d1b5484eee20f94"
+    },
+    {
+      "path": "stage3/xnu-source-r22/SonyMemoryInit.c",
+      "bytes": 2736,
+      "sha256": "539b24830dff1df9e0ff566940812626b8eb12f72bb596188167861020de54e1"
+    },
+    {
+      "path": "stage3/xnu-source-r22/SonyMemoryInit.inf",
+      "bytes": 324,
+      "sha256": "e39e1c41947e39a499f2ae99fe33e03f7a5ad1c041fa2040999a6cfb2a774d7e"
+    },
+    {
+      "path": "stage3/xnu-source-r22/SonySerialPortLib.c",
+      "bytes": 2301,
+      "sha256": "3e182225a56c56adc95831f31bddd56009fc40defdeb97f7726eb914c861b893"
+    },
+    {
+      "path": "stage3/xnu-source-r22/SonySerialPortLib.inf",
+      "bytes": 267,
+      "sha256": "bedb8e5180ee192b3b453b78808fe19cd6beccfc713d1954dd95ce2840948471"
+    },
+    {
+      "path": "stage3/xnu-source-r22/XnuBoot.h",
+      "bytes": 6842,
+      "sha256": "72a4dec5d00c151239d3b8726662ede61e3c9377577fb52ccfe26f640da29667"
+    },
+    {
+      "path": "stage4/apfs_stream.py",
+      "bytes": 1548,
+      "sha256": "786aca72b549f265090b0248e2106b629fae402dbcf9bfe5167f1dfdf41f5be7"
+    },
+    {
+      "path": "stage4/build_apfs_images.py",
+      "bytes": 5741,
+      "sha256": "25a5f06ace71134dadb49271548901ee4603e2246d0533ae95513609f2c6ba71"
+    },
+    {
+      "path": "stage4/extent_probe.c",
+      "bytes": 2171,
+      "sha256": "b8c3feb9245da9f011046877e8fa75b15f16ef1624876b1474a61ac7547ebef8"
+    },
+    {
+      "path": "stage4/pid1-apfs-j/build.py",
+      "bytes": 2653,
+      "sha256": "7ea2e29adba574ac874cf0a8b6c9de376ae9326aea84e76fe323baa186aa6521"
+    },
+    {
+      "path": "stage4/pid1-apfs-j/pid1.c",
+      "bytes": 3298,
+      "sha256": "d3340f6d437252896328c4e815b178956c3b0e1c45210d79f7cf175ee47783af"
+    },
+    {
+      "path": "stage4/pid1-apfs-j/pid1.ld",
+      "bytes": 208,
+      "sha256": "9f3fea2439cbb27940e09a0b0a7494ffad497feac3d202d6f9540b4cb2878545"
+    },
+    {
+      "path": "stage4/sony-uefi-s4f/AArch64/ArmPlatformHelper.S",
+      "bytes": 2468,
+      "sha256": "8a5f1a7620bc1b84a617459cec159fbce7589914e666d9b043ca478a8f49dc44"
+    },
+    {
+      "path": "stage4/sony-uefi-s4f/build_worker.py",
+      "bytes": 3935,
+      "sha256": "3e8fa92286610882fb23f83ee1d383906cacfe9eb4523a6c24b0440bc9442ee0"
+    },
+    {
+      "path": "stage4/sony-uefi-s4f/GicPrepare.h",
+      "bytes": 7184,
+      "sha256": "53d3d2f9366580b67a8b43b18cf3ca04c078b3df430492d8fb31d0625dab097c"
+    },
+    {
+      "path": "stage4/sony-uefi-s4f/Include/Library/UniXNULib.h",
+      "bytes": 1167,
+      "sha256": "8444339ac4a4627ae379a9d3e8e440304f23ff14d5487a5340914fa53cd218f7"
+    },
+    {
+      "path": "stage4/sony-uefi-s4f/Include/Protocol/UniXNULoader.h",
+      "bytes": 2386,
+      "sha256": "4853991ceac062a2bd3d8d36d262d0cf09b1fe751c44813e267371cd93479cbb"
+    },
+    {
+      "path": "stage4/sony-uefi-s4f/Include/Protocol/UniXNUMenuPlugin.h",
+      "bytes": 2186,
+      "sha256": "eb897e32cb4c260818dd89603176f8ff3879bff209dfd1b24fc49e003436d534"
+    },
+    {
+      "path": "stage4/sony-uefi-s4f/KernelContract.h",
+      "bytes": 413,
+      "sha256": "f691d8ecfcc6212b51838151fdc0fb348d3b3ca89919e0c024f85b0457de13a3"
+    },
+    {
+      "path": "stage4/sony-uefi-s4f/KernelStage.h",
+      "bytes": 4238,
+      "sha256": "b924ec3996d78f25ce0be5fd57702c8c2f72cbc7550e06d04d7256e6e7377ad6"
+    },
+    {
+      "path": "stage4/sony-uefi-s4f/LoaderContext.h",
+      "bytes": 663,
+      "sha256": "1b6afef05cd29383ded161ca3302bc400be56b106d4d652f68533dccf9ca6516"
+    },
+    {
+      "path": "stage4/sony-uefi-s4f/LoaderJump.h",
+      "bytes": 1299,
+      "sha256": "295ec2c93c9c7d8872907e33cbff39c3287ae69b6f807d3f4c7f750dfe75e541"
+    },
+    {
+      "path": "stage4/sony-uefi-s4f/LoaderReturn.S",
+      "bytes": 4193,
+      "sha256": "b8582199374d28a256a55454a9bf8d4f2e2ef0415dee662a64598491db034ed5"
+    },
+    {
+      "path": "stage4/sony-uefi-s4f/NvramImage.h",
+      "bytes": 16457,
+      "sha256": "a95d71586d7318b1ce26c5e36f0c39ffbc8ab3a09eab23b963fca7251ef6a1f9"
+    },
+    {
+      "path": "stage4/sony-uefi-s4f/README.md",
+      "bytes": 860,
+      "sha256": "9f726508bdd7c620fa87be7965b8e53d4862f9989319d5c2353ef44e7bccf521"
+    },
+    {
+      "path": "stage4/sony-uefi-s4f/ResidentApp.c",
+      "bytes": 5956,
+      "sha256": "05d9933dc51271c149a98800dac340cc999e40d9dfea3d87ff5a50b0cc939b94"
+    },
+    {
+      "path": "stage4/sony-uefi-s4f/ResidentApp.inf",
+      "bytes": 519,
+      "sha256": "9f08c371a28cc314364715c705ca882a9d72ac390b15fc261b7b918e909f7372"
+    },
+    {
+      "path": "stage4/sony-uefi-s4f/Sony.dsc",
+      "bytes": 2280,
+      "sha256": "b58500608dffcdbc00970bb2892fb0614ad32e577e45d90a877a0d5a2ffb16b1"
+    },
+    {
+      "path": "stage4/sony-uefi-s4f/Sony.fdf",
+      "bytes": 2552,
+      "sha256": "0a835d0cc6ba0f8b41b6ce9062ca743bea002b26494beb415fdb57b071b99edf"
+    },
+    {
+      "path": "stage4/sony-uefi-s4f/SonyArmPlatformLib.c",
+      "bytes": 3549,
+      "sha256": "4738eeac427bf468b386f141db6eaf15bd7d9ea95523ee8de49d9ccb1179121d"
+    },
+    {
+      "path": "stage4/sony-uefi-s4f/SonyArmPlatformLib.inf",
+      "bytes": 1416,
+      "sha256": "94e63733690d0d4379e92ad9aeb4f61aa80c363394a8a39ed35cb57af6fe68e2"
+    },
+    {
+      "path": "stage4/sony-uefi-s4f/SonyCommon.dsc.inc",
+      "bytes": 19085,
+      "sha256": "f03029813699623c150d2ffdc450c71f4c57e0d73b1be5f7b222a20a7b20f7c3"
+    },
+    {
+      "path": "stage4/sony-uefi-s4f/SonyCrashLib.c",
+      "bytes": 1093,
+      "sha256": "634f714b06d9a998c05ccd4e7d61b8cac36b0fc67602800021fa39ead615a5b3"
+    },
+    {
+      "path": "stage4/sony-uefi-s4f/SonyCrashLib.inf",
+      "bytes": 363,
+      "sha256": "6b5c937bb70ee1bd71d1be73ffb2ca4880fb1261b3722b8d11750ddd938f0b6d"
+    },
+    {
+      "path": "stage4/sony-uefi-s4f/SonyDxeProbe.c",
+      "bytes": 2656,
+      "sha256": "3c83357cf2266c13d5ada1c5409a21be69ea380a4b109a6379bc8fe03fd11641"
+    },
+    {
+      "path": "stage4/sony-uefi-s4f/SonyDxeProbe.inf",
+      "bytes": 577,
+      "sha256": "08ecb391b2fbbf606b0b1fdecf84a2292583717bc37e1d6f5d1b5484eee20f94"
+    },
+    {
+      "path": "stage4/sony-uefi-s4f/SonyFixture.h",
+      "bytes": 97,
+      "sha256": "08fade7b9261f960de092b0a60aefddaca807423032fced44528d705f3e7d80b"
+    },
+    {
+      "path": "stage4/sony-uefi-s4f/SonyGop.c",
+      "bytes": 12120,
+      "sha256": "c8643a96355b8d2a6e2e2835a8e82cb52ffb31de349ffff5e0cf47e82e53f7db"
+    },
+    {
+      "path": "stage4/sony-uefi-s4f/SonyInput.c",
+      "bytes": 5435,
+      "sha256": "6da14762c63372a43cdd157710e6780eb404c013b2528fbe2c41b039c498ab4a"
+    },
+    {
+      "path": "stage4/sony-uefi-s4f/SonyMemoryInit.c",
+      "bytes": 3281,
+      "sha256": "fed1055bd9b5470c90f5037041d8ceb2d6d075ed68063c0991bafefe6f3af0e9"
+    },
+    {
+      "path": "stage4/sony-uefi-s4f/SonyMemoryInit.inf",
+      "bytes": 324,
+      "sha256": "e39e1c41947e39a499f2ae99fe33e03f7a5ad1c041fa2040999a6cfb2a774d7e"
+    },
+    {
+      "path": "stage4/sony-uefi-s4f/SonySerialPortLib.c",
+      "bytes": 2301,
+      "sha256": "3e182225a56c56adc95831f31bddd56009fc40defdeb97f7726eb914c861b893"
+    },
+    {
+      "path": "stage4/sony-uefi-s4f/SonySerialPortLib.inf",
+      "bytes": 267,
+      "sha256": "bedb8e5180ee192b3b453b78808fe19cd6beccfc713d1954dd95ce2840948471"
+    },
+    {
+      "path": "stage4/sony-uefi-s4f/SonyUfsContract.h",
+      "bytes": 1117,
+      "sha256": "7c8f4d353207faf03e0e23a3833df57a8ba21c88b299ea7d6bbdc9a69bd28fcd"
+    },
+    {
+      "path": "stage4/sony-uefi-s4f/SonyUfsPrepare.h",
+      "bytes": 7033,
+      "sha256": "e5be9843a30dba2c3513a8faef01e49c4403cb9c2cbfb38f7548dd6caedc9869"
+    },
+    {
+      "path": "stage4/sony-uefi-s4f/SonyUiApp.c",
+      "bytes": 5309,
+      "sha256": "48991ced6ec6962fc3e3739ab44fcb6bfae06873e12b339b8df7fa65174a7dda"
+    },
+    {
+      "path": "stage4/sony-uefi-s4f/SonyUiApp.inf",
+      "bytes": 787,
+      "sha256": "9fb80acd846c93e6a6127d74523b16e9acfd84e261b90413186a201a19d50de5"
+    },
+    {
+      "path": "stage4/sony-uefi-s4f/UniXNU/Font.c",
+      "bytes": 12616,
+      "sha256": "391c7dbc8c6eb3cd07230e3dd8d38e4ba8a5a9b603bcaecb4d8e62a4603d2ac6"
+    },
+    {
+      "path": "stage4/sony-uefi-s4f/UniXNU/Internal.h",
+      "bytes": 16111,
+      "sha256": "7acdc37f8c5540bf0df24797bb04ca09dc111414e75c72e8d2ee5f3843a34faf"
+    },
+    {
+      "path": "stage4/sony-uefi-s4f/UniXNU/Logo.c",
+      "bytes": 4613,
+      "sha256": "da9d49c502f42c489742d2abaa8a300db1c265b0fcf807e4d7bd3d8aa8a9e4a1"
+    },
+    {
+      "path": "stage4/sony-uefi-s4f/UniXNU/LogoShape.h",
+      "bytes": 8266,
+      "sha256": "8fe96788c3c1e27df7f4209c31ae1b3818ae99cf858d6dae457cd16643a6a43b"
+    },
+    {
+      "path": "stage4/sony-uefi-s4f/UniXNU/Menu.c",
+      "bytes": 13322,
+      "sha256": "22e7fcb8397689cbdc49d1d1a8a9dead0e9f70855821befac10c836dfb97f2f4"
+    },
+    {
+      "path": "stage4/sony-uefi-s4f/UniXNU/Ui.c",
+      "bytes": 27007,
+      "sha256": "7f5a2773424a5a8cc68c12d061744ffd80c2847aa6595625740f41e0b5ea6792"
+    },
+    {
+      "path": "stage4/sony-uefi-s4f/UniXNUPkg.dec",
+      "bytes": 2246,
+      "sha256": "08e87df9581889cecc387f01cc7e56586c1db4d63280f5c4600d02d63fd12e8f"
+    },
+    {
+      "path": "stage4/sony-uefi-s4f/XnuBoot.h",
+      "bytes": 7084,
+      "sha256": "6246857818e554e704983143e59b2c6a4d8eea018cd1ce99693be76904a5d034"
+    },
+    {
+      "path": "stage4/sony-uefi-s4j/AArch64/ArmPlatformHelper.S",
+      "bytes": 2468,
+      "sha256": "e6a57a2a3d1a86e69dd27874316a8fcfdb6283bb353f839a8f84b627717a7afa"
+    },
+    {
+      "path": "stage4/sony-uefi-s4j/build_worker.py",
+      "bytes": 3935,
+      "sha256": "4934eecc9a52ec9231fb487496c8cd0f56a0f6c73b4e86e3ba591c2aa1b78c80"
+    },
+    {
+      "path": "stage4/sony-uefi-s4j/GicPrepare.h",
+      "bytes": 7184,
+      "sha256": "53d3d2f9366580b67a8b43b18cf3ca04c078b3df430492d8fb31d0625dab097c"
+    },
+    {
+      "path": "stage4/sony-uefi-s4j/Include/Library/UniXNULib.h",
+      "bytes": 1167,
+      "sha256": "8444339ac4a4627ae379a9d3e8e440304f23ff14d5487a5340914fa53cd218f7"
+    },
+    {
+      "path": "stage4/sony-uefi-s4j/Include/Protocol/UniXNULoader.h",
+      "bytes": 2386,
+      "sha256": "4853991ceac062a2bd3d8d36d262d0cf09b1fe751c44813e267371cd93479cbb"
+    },
+    {
+      "path": "stage4/sony-uefi-s4j/Include/Protocol/UniXNUMenuPlugin.h",
+      "bytes": 2186,
+      "sha256": "eb897e32cb4c260818dd89603176f8ff3879bff209dfd1b24fc49e003436d534"
+    },
+    {
+      "path": "stage4/sony-uefi-s4j/KernelContract.h",
+      "bytes": 413,
+      "sha256": "290f6be86ee267a93b842dfe16cb5dada239c25ea0fdbf64b189e7c47cc32c5e"
+    },
+    {
+      "path": "stage4/sony-uefi-s4j/KernelStage.h",
+      "bytes": 4386,
+      "sha256": "33c997a64f41584a6a75c34685edbf9879af2b7f8c69088ba49e7750eed26e40"
+    },
+    {
+      "path": "stage4/sony-uefi-s4j/LoaderContext.h",
+      "bytes": 663,
+      "sha256": "1b6afef05cd29383ded161ca3302bc400be56b106d4d652f68533dccf9ca6516"
+    },
+    {
+      "path": "stage4/sony-uefi-s4j/LoaderJump.h",
+      "bytes": 1299,
+      "sha256": "295ec2c93c9c7d8872907e33cbff39c3287ae69b6f807d3f4c7f750dfe75e541"
+    },
+    {
+      "path": "stage4/sony-uefi-s4j/LoaderReturn.S",
+      "bytes": 4193,
+      "sha256": "9ccab2bc1bc5f4193652fad3cb94fcc7b5ab146baf34fa0a52423ab97a2ed847"
+    },
+    {
+      "path": "stage4/sony-uefi-s4j/NvramImage.h",
+      "bytes": 16457,
+      "sha256": "a95d71586d7318b1ce26c5e36f0c39ffbc8ab3a09eab23b963fca7251ef6a1f9"
+    },
+    {
+      "path": "stage4/sony-uefi-s4j/README.md",
+      "bytes": 1729,
+      "sha256": "f729d68a141adbb1996da4e9b087ad268c403e00e0f86fadd21a892d0e51844b"
+    },
+    {
+      "path": "stage4/sony-uefi-s4j/ResidentApp.c",
+      "bytes": 5956,
+      "sha256": "0ac8de9edc88b8dfd019e53005d9883340d5a799794e4d82466c2481233c972a"
+    },
+    {
+      "path": "stage4/sony-uefi-s4j/ResidentApp.inf",
+      "bytes": 519,
+      "sha256": "9f08c371a28cc314364715c705ca882a9d72ac390b15fc261b7b918e909f7372"
+    },
+    {
+      "path": "stage4/sony-uefi-s4j/Sony.dsc",
+      "bytes": 2280,
+      "sha256": "a947a5d1afe9a53a193ad3d77eb8f4d71de276079bb7196a4106eca50b1448ad"
+    },
+    {
+      "path": "stage4/sony-uefi-s4j/Sony.fdf",
+      "bytes": 2552,
+      "sha256": "0a835d0cc6ba0f8b41b6ce9062ca743bea002b26494beb415fdb57b071b99edf"
+    },
+    {
+      "path": "stage4/sony-uefi-s4j/SonyArmPlatformLib.c",
+      "bytes": 3549,
+      "sha256": "4738eeac427bf468b386f141db6eaf15bd7d9ea95523ee8de49d9ccb1179121d"
+    },
+    {
+      "path": "stage4/sony-uefi-s4j/SonyArmPlatformLib.inf",
+      "bytes": 1416,
+      "sha256": "94e63733690d0d4379e92ad9aeb4f61aa80c363394a8a39ed35cb57af6fe68e2"
+    },
+    {
+      "path": "stage4/sony-uefi-s4j/SonyCommon.dsc.inc",
+      "bytes": 19085,
+      "sha256": "f03029813699623c150d2ffdc450c71f4c57e0d73b1be5f7b222a20a7b20f7c3"
+    },
+    {
+      "path": "stage4/sony-uefi-s4j/SonyCrashLib.c",
+      "bytes": 1093,
+      "sha256": "d6f331915e9189de1a2a153cb1c79bf3e23579ddca0a8167f2d6036d3994c614"
+    },
+    {
+      "path": "stage4/sony-uefi-s4j/SonyCrashLib.inf",
+      "bytes": 363,
+      "sha256": "6b5c937bb70ee1bd71d1be73ffb2ca4880fb1261b3722b8d11750ddd938f0b6d"
+    },
+    {
+      "path": "stage4/sony-uefi-s4j/SonyDxeProbe.c",
+      "bytes": 2656,
+      "sha256": "1d340cf36a21cdb18d7863ca1db00549292cea8c5fcf22cb3a22368fef25ca2c"
+    },
+    {
+      "path": "stage4/sony-uefi-s4j/SonyDxeProbe.inf",
+      "bytes": 577,
+      "sha256": "08ecb391b2fbbf606b0b1fdecf84a2292583717bc37e1d6f5d1b5484eee20f94"
+    },
+    {
+      "path": "stage4/sony-uefi-s4j/SonyFiles.h",
+      "bytes": 2492,
+      "sha256": "ccabaface9a97dc4152fc39f216ec6feb1e93f7c23b884d41575dd88eb989599"
+    },
+    {
+      "path": "stage4/sony-uefi-s4j/SonyFixture.h",
+      "bytes": 97,
+      "sha256": "08fade7b9261f960de092b0a60aefddaca807423032fced44528d705f3e7d80b"
+    },
+    {
+      "path": "stage4/sony-uefi-s4j/SonyGop.c",
+      "bytes": 12120,
+      "sha256": "1466228ac7686ece76a079dfd7c4beff7f71a68a162c220364d5ef1af8a3df99"
+    },
+    {
+      "path": "stage4/sony-uefi-s4j/SonyInput.c",
+      "bytes": 5435,
+      "sha256": "499507720ec6121f73689311872ac58c56a15c1011f3151d13ee146ca0e49e10"
+    },
+    {
+      "path": "stage4/sony-uefi-s4j/SonyMemoryInit.c",
+      "bytes": 3398,
+      "sha256": "bc9783c2022a985184ee3b463c5e735aeaf5152c54c36cddb47be410a8dd0efd"
+    },
+    {
+      "path": "stage4/sony-uefi-s4j/SonyMemoryInit.inf",
+      "bytes": 324,
+      "sha256": "e39e1c41947e39a499f2ae99fe33e03f7a5ad1c041fa2040999a6cfb2a774d7e"
+    },
+    {
+      "path": "stage4/sony-uefi-s4j/SonySerialPortLib.c",
+      "bytes": 2301,
+      "sha256": "3e182225a56c56adc95831f31bddd56009fc40defdeb97f7726eb914c861b893"
+    },
+    {
+      "path": "stage4/sony-uefi-s4j/SonySerialPortLib.inf",
+      "bytes": 267,
+      "sha256": "bedb8e5180ee192b3b453b78808fe19cd6beccfc713d1954dd95ce2840948471"
+    },
+    {
+      "path": "stage4/sony-uefi-s4j/SonyUfsContract.h",
+      "bytes": 1117,
+      "sha256": "7c8f4d353207faf03e0e23a3833df57a8ba21c88b299ea7d6bbdc9a69bd28fcd"
+    },
+    {
+      "path": "stage4/sony-uefi-s4j/SonyUfsPrepare.h",
+      "bytes": 7051,
+      "sha256": "8eba5f29bc27b2b1a21a784e53feae2d5e4ca1d9cc52b04fcaf1289717df4c62"
+    },
+    {
+      "path": "stage4/sony-uefi-s4j/SonyUiApp.c",
+      "bytes": 5305,
+      "sha256": "a7411d5c15a85f3d795ecdf5b48b8c791eb82c928b1973ab01b0a9d740164aac"
+    },
+    {
+      "path": "stage4/sony-uefi-s4j/SonyUiApp.inf",
+      "bytes": 787,
+      "sha256": "f2e892d98c3c30cff83e15146e7567c6a228b33b00bfe54213708c2a615ddb99"
+    },
+    {
+      "path": "stage4/sony-uefi-s4j/UniXNU/Font.c",
+      "bytes": 12616,
+      "sha256": "391c7dbc8c6eb3cd07230e3dd8d38e4ba8a5a9b603bcaecb4d8e62a4603d2ac6"
+    },
+    {
+      "path": "stage4/sony-uefi-s4j/UniXNU/Internal.h",
+      "bytes": 16111,
+      "sha256": "7acdc37f8c5540bf0df24797bb04ca09dc111414e75c72e8d2ee5f3843a34faf"
+    },
+    {
+      "path": "stage4/sony-uefi-s4j/UniXNU/Logo.c",
+      "bytes": 4613,
+      "sha256": "da9d49c502f42c489742d2abaa8a300db1c265b0fcf807e4d7bd3d8aa8a9e4a1"
+    },
+    {
+      "path": "stage4/sony-uefi-s4j/UniXNU/LogoShape.h",
+      "bytes": 8266,
+      "sha256": "8fe96788c3c1e27df7f4209c31ae1b3818ae99cf858d6dae457cd16643a6a43b"
+    },
+    {
+      "path": "stage4/sony-uefi-s4j/UniXNU/Menu.c",
+      "bytes": 13322,
+      "sha256": "22e7fcb8397689cbdc49d1d1a8a9dead0e9f70855821befac10c836dfb97f2f4"
+    },
+    {
+      "path": "stage4/sony-uefi-s4j/UniXNU/Ui.c",
+      "bytes": 27007,
+      "sha256": "7f5a2773424a5a8cc68c12d061744ffd80c2847aa6595625740f41e0b5ea6792"
+    },
+    {
+      "path": "stage4/sony-uefi-s4j/UniXNUPkg.dec",
+      "bytes": 2246,
+      "sha256": "08e87df9581889cecc387f01cc7e56586c1db4d63280f5c4600d02d63fd12e8f"
+    },
+    {
+      "path": "stage4/sony-uefi-s4j/XnuBoot.h",
+      "bytes": 7101,
+      "sha256": "061ca9d4800b3201afb19abdf7188279d1f34639e134b9f21837514b94cf0d2b"
+    },
+    {
+      "path": "stage4/sony-xnu-storage/kernel_worker.py",
+      "bytes": 5927,
+      "sha256": "41a34314b5a55ee25e1923ceec6a35caf8e30356dddfea855ce62d4f6655446c"
+    },
+    {
+      "path": "stage4/sony-xnu-storage/SonyExtentRead.h",
+      "bytes": 2038,
+      "sha256": "bcb99572bace0846e0b647888b2604f9475783a4dbf4232698c67b206b9ac777"
+    },
+    {
+      "path": "stage4/sony-xnu-storage/SonyUfsContract.h",
+      "bytes": 1117,
+      "sha256": "7c8f4d353207faf03e0e23a3833df57a8ba21c88b299ea7d6bbdc9a69bd28fcd"
+    },
+    {
+      "path": "stage4/sony-xnu-storage/SonyUfsFile.h",
+      "bytes": 3795,
+      "sha256": "36ce5a1a35712c16c171a2ffaa3e7cb86930d5412fb1050b282f3ab3997f320a"
+    },
+    {
+      "path": "stage4/sony-xnu-storage/SonyUfsPrepare.h",
+      "bytes": 3243,
+      "sha256": "9c42ced7cc0ac00e6f3335bc782e34544c638479d0da04dac329ca85199ded5c"
+    },
+    {
+      "path": "stage4/sony-xnu-storage/test_extent.c",
+      "bytes": 1332,
+      "sha256": "5d0f851c9c7f5697aa71b91b39153cc55f17f650239d8cdd526dea9e2562e1d4"
+    },
+    {
+      "path": "THIRD_PARTY_NOTICES.md",
+      "bytes": 1066,
+      "sha256": "9f016b1a66e075bd1e0fa8900a44e75d490a87eab0d4d184e3c0b77335b0a5a7"
+    },
+    {
+      "path": "upstreams.lock.json",
+      "bytes": 1431,
+      "sha256": "0724610f2954894ce0057fd50af9500588d3f22c6f64cc52d3004e68a7f4de87"
+    }
+  ],
+  "python_syntax_checked": 21,
+  "secret_scan_passed": true,
+  "binary_exclusion_passed": true,
+  "synthetic_nvram_verified": true
+}

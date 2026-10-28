@@ -1,0 +1,25 @@
+[Defines]
+  INF_VERSION = 0x00010019
+  BASE_NAME = SonyResidentApp
+  FILE_GUID = 96aa8849-73b5-47d7-b856-125a1aa37278
+  MODULE_TYPE = UEFI_APPLICATION
+  VERSION_STRING = 0.1
+  ENTRY_POINT = ResidentAppEntry
+[Sources]
+  ResidentApp.c
+  LoaderReturn.S
+  KernelStage.h
+  XnuBoot.h
+  GicPrepare.h
+  NvramImage.h
+  LoaderContext.h
+  LoaderJump.h
+[Packages]
+  MdePkg/MdePkg.dec
+[LibraryClasses]
+  UefiApplicationEntryPoint
+  UefiBootServicesTableLib
+  DebugLib
+  SerialPortLib
+  BaseLib
+  BaseMemoryLib

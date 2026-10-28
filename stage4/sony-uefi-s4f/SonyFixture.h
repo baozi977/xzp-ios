@@ -1,0 +1,3 @@
+#pragma once
+#define SONY_FIXTURE_LBA 12886665ULL
+#define SONY_FIXTURE_FNV 0x87e12b7b5c5c1189ULL

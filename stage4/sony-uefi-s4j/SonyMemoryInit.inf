@@ -1,0 +1,16 @@
+[Defines]
+  INF_VERSION = 0x00010019
+  BASE_NAME = SonyMemoryInit
+  FILE_GUID = a125cf5e-8480-4157-9813-d7771ced956f
+  MODULE_TYPE = SEC
+  VERSION_STRING = 0.1
+  LIBRARY_CLASS = MemoryInitPeiLib
+[Sources]
+  SonyMemoryInit.c
+[Packages]
+  MdePkg/MdePkg.dec
+  ArmPkg/ArmPkg.dec
+[LibraryClasses]
+  ArmMmuLib
+  DebugLib
+  HobLib

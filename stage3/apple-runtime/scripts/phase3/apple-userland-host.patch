@@ -1,0 +1,47 @@
+diff --git a/userland/build.sh b/userland/build.sh
+index a3f40de..8bf91f3 100755
+--- a/userland/build.sh
++++ b/userland/build.sh
+@@ -364,7 +364,8 @@ if [ -d $IOS/rootfs/usr/lib ]; then
+ 		fi
+ 	fi
+ 	# (drawable_test is built in the same block as surf_test, so it is copied with it)
+-	cp obj/hello_dyn obj/svc_test obj/surf_test obj/drawable_test obj/rwtouch obj/mg_test root/bin/
++	cp obj/hello_dyn obj/svc_test obj/surf_test obj/rwtouch obj/mg_test root/bin/
++	[ -f obj/drawable_test ] && cp obj/drawable_test root/bin/
+ 	[ -f obj/cpu_test ] && cp obj/cpu_test root/bin/        # (a prebuilt/ from before this program has none)
+ 	[ -f obj/thermald ] && cp obj/thermald root/bin/
+ 	[ -f obj/cow_test ] && cp obj/cow_test root/bin/
+@@ -494,7 +495,7 @@ if [ -d $IOS/rootfs/usr/lib ]; then
+ 	cp $IOS/var.skel root/etc/var.skel              # the directories init creates in /private/var
+ 	# time zones: the template's links go in a circle until the time zone daemon has run (/usr/share/zoneinfo
+ 	# points back into /var); point them at the data that ships with the system, and use this machine's zone
+-	zone=$(timedatectl show -p Timezone --value 2>/dev/null); zone=${zone:-UTC}
++	zone=$(timedatectl show -p Timezone --value 2>/dev/null || true); zone=${zone:-UTC}
+ 	sed -i -e 's|^l\t/usr/share/zoneinfo\t/private/var/db/timezone/zoneinfo$|l\t/usr/share/zoneinfo.default\t/private/var/db/timezone/zoneinfo|' \
+ 		-e "s|^l\t/var/db/timezone/zoneinfo/[^\t]*\t/private/var/db/timezone/localtime\$|l\t/var/db/timezone/zoneinfo/$zone\t/private/var/db/timezone/localtime|" root/etc/var.skel
+ 	# ... and the files of ours it puts there (var/): those under mobile/ belong to the user mobile
+diff --git a/qemu/run.sh b/qemu/run.sh
+index dd8667b..eebfed6 100755
+--- a/qemu/run.sh
++++ b/qemu/run.sh
+@@ -9,9 +9,11 @@
+ #                           puts it; Debian/Ubuntu: /usr/share/AAVMF/AAVMF_CODE.fd and AAVMF_VARS.fd)
+ cd "$(dirname "$0")"
+ T=${1:-20}; shift
+-EFI=${QEMU_EFI:-/usr/share/edk2/aarch64/QEMU_EFI.fd}
++EFI=${QEMU_EFI:-/usr/share/AAVMF/AAVMF_CODE.no-secboot.fd}
+ [ -f "$EFI" ] || { echo "run.sh: no UEFI firmware at $EFI (set QEMU_EFI and QEMU_VARS)"; exit 1; }
+-cp "${QEMU_VARS:-/usr/share/edk2/aarch64/QEMU_VARS.fd}" vars.fd 2>/dev/null
++VARS=${QEMU_VARS:-/usr/share/AAVMF/AAVMF_VARS.fd}
++[ -f "$VARS" ] || { echo "run.sh: no UEFI variables at $VARS (set QEMU_VARS)"; exit 1; }
++cp "$VARS" vars.fd
+ # the loader is the boot application of the little FAT volume QEMU makes of esp/:
+ # the one built here, or else the one that comes with the repository
+ L=../xnuloader/loader.efi; [ -f $L ] || L=../prebuilt/loader.efi
+@@ -22,4 +24,4 @@ timeout "$T" qemu-system-aarch64 -M virt,gic-version=3 -cpu cortex-a76 -smp ${QE
+   -drive if=pflash,format=raw,file=vars.fd \
+   -drive file=fat:rw:esp,format=raw,if=virtio \
+   -device loader,file=payload.bin,addr=0xF0000000,force-raw=on \
+-  -display none -serial stdio -monitor none -no-reboot "$@" 2>&1
++  -display none -serial stdio -monitor none -nic none -no-reboot "$@" 2>&1
