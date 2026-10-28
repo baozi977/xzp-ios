@@ -1,0 +1,12 @@
+private/
+out/
+.local/
+__pycache__/
+*.pyc
+*.img
+*.apfs
+*.ipsw
+*.pem
+*.key
+.env*
+credentials.json
