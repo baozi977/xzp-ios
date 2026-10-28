@@ -21,4 +21,4 @@ S4J：init 36项检查0失败；动态探针退出7；IOSurface接口80项检查
 
 ## 许可
 
-XZPIOS原创代码采用MIT；上游派生文件保留各自头部许可证。见 [第三方来源](THIRD_PARTY_NOTICES.md)。不包含Apple固件、用户态镜像、SDK、分区备份、原始设备日志、账号凭据或服务器连接资料。
+XZPIOS原创代码采用MIT；上游派生文件保留各自头部许可证。见 [第三方来源](THIRD_PARTY_NOTICES.md)。
